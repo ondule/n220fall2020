@@ -1,0 +1,42 @@
+<!-- 
+    Jesús Andrade
+    Fall 2022 N220
+    
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peak Pixels</title>
+</head>
+<body>
+
+<script>
+    //SQUARE DIMENSIONS OBJECT 
+    let size = {
+    x: 100,
+    y: 100
+}
+
+var div = document.createElement("div");
+div.style.width = size.x + "px"; //changes width
+div.style.height = size.y + "px"; //changes height
+div.innerHTML = "PEAK PIXELS"; //changes text inside html
+div.style.textAlign = "center" //aligns text
+div.style.background = "#49e69a"; //background color
+//edits the width size on click
+document.body.appendChild(div);
+div.onclick = function grow() {
+    div.style.width = (size.x *= 1.1) + "px"
+    div.style.height = (size.y *= 1.1) + "px"
+    
+    
+}
+
+
+</script>
+<!-- <script src="app.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!-- 
+    Jesús Andrade
+    FALL N220
+    MODULE 5
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDiv'ns</title>
+</head>
+<body>
+    
+
+<div id="change">Tofu</div>
+    
+
+
+<script>
+ let change = document.getElementById("change"); //fetching the div tag containing tofu
+let clickCount = 0; //setting initial counter value
+//listening for number of clicks and running switch according to cases 
+change.addEventListener("click", function(mcDiv) {
+    mcDiv.preventDefault();
+    clickCount += 1; //telling counter to increase by one
+    //switch statement changes text depending on clicks
+    switch(clickCount) {
+            case 1:
+                change.innerHTML = 'Mc ' + change.innerHTML; 
+                break;
+            case 2:
+                change.innerHTML = 'Mc ' + change.innerHTML;
+                break;
+            default:
+                change.innerHTML = 'divdivdiv';
+        }
+
+}); 
+
+
+
+
+
+</script>
+
+</body>
+</html>
